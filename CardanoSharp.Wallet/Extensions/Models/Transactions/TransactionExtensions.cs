@@ -107,7 +107,7 @@ public static class TransactionExtensions
     {
         uint baseFee = transaction.CalculateBaseFee(a, b);
         uint scriptFee = transaction.CalculateScriptFee(priceMem, priceStep);
-        return baseFee + scriptFee + 200000;
+        return baseFee + scriptFee + 300000;
     }
 
     public static uint CalculateBaseFee(this Transaction transaction, uint? a = null, uint? b = null)
